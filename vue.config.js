@@ -1,7 +1,7 @@
-const moment = require('moment');
-let date = moment().format("YYYYMMDD-HHmm");
-const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
-let outputDir = process.env.VUE_APP_OUTDIR + date
+const moment = require('moment'); //引入时间插件
+let date = moment().format("YYYYMMDD-HHmm"); //创建打包时间
+const UglifyJsPlugin = require("uglifyjs-webpack-plugin"); // 引入webpack插件
+let outputDir = process.env.VUE_APP_OUTDIR + date //打包目录
 module.exports = {
     publicPath:'./',
     outputDir: outputDir,
