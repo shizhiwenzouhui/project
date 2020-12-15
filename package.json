@@ -5,10 +5,13 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build_company": "vue-cli-service build --mode company",
+    "build_agent": "vue-cli-service build --mode agent",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "uglifyjs-webpack-plugin": "^2.2.0",
     "vue": "^2.6.11"
   },
   "devDependencies": {
